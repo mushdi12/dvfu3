@@ -1,4 +1,4 @@
-#task A
+# task A
 print("Как Вас зовут?")
 name = input()
 print(f"Здравствуйте, {name}!")
@@ -9,7 +9,7 @@ if mood == "хорошо":
 elif mood == "плохо":
     print("Всё наладится!")
 
-#task B
+# task B
 p = int(input())
 v = int(input())
 if p > v:
@@ -17,7 +17,7 @@ if p > v:
 else:
     print("Вася")
 
-#task C
+# task C
 speed_pety = int(input())
 speed_vasya = int(input())
 speed_tolya = int(input())
@@ -29,7 +29,7 @@ elif speed_vasya > speed_pety and speed_vasya > speed_tolya:
 else:
     print("Толя")
 
-#task Dspeed_pety = int(input())
+# task Dspeed_pety = int(input())
 speed_vasya = int(input())
 speed_tolya = int(input())
 
@@ -58,7 +58,7 @@ else:
         print("2. Вася")
         print("3. Петя")
 
-#task E
+# task E
 N = int(input())
 M = int(input())
 
@@ -73,7 +73,7 @@ if pety_apple > vasya_apple:
 else:
     print("Вася")
 
-#task F
+# task F
 year = int(input())
 
 if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0):
@@ -81,7 +81,7 @@ if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0):
 else:
     print("NO")
 
-#task G
+# task G
 number = input().strip()
 
 if number == number[::-1]:
@@ -89,7 +89,7 @@ if number == number[::-1]:
 else:
     print("NO")
 
-#task H
+# task H
 sentence = input().strip()
 
 if "зайка" in sentence.split():
@@ -97,17 +97,17 @@ if "зайка" in sentence.split():
 else:
     print("NO")
 
-#task I
+# task I
 names = [input().strip() for _ in range(3)]
 print(min(names))
 
-#task J
+# task J
 num = input().strip()
 a = int(num[0]) + int(num[1])
 b = int(num[1]) + int(num[2])
 print(f"{max(a, b)}{min(a, b)}")
 
-#task K
+# task K
 num = input().strip()
 digits = [int(digit) for digit in num]
 
@@ -120,7 +120,7 @@ if min_digit + max_digit == middle_digit * 2:
 else:
     print("NO")
 
-#task L
+# task L
 a = int(input())
 b = int(input())
 c = int(input())
@@ -130,7 +130,7 @@ if a + b > c and a + c > b and b + c > a:
 else:
     print("NO")
 
-#task M
+# task M
 a = input().strip()
 b = input().strip()
 c = input().strip()
@@ -140,7 +140,7 @@ for i in range(2):
         print(a[i])
         break
 
-#task N
+# task N
 number = input().strip()
 a = int(number[0] + number[1])
 b = int(number[1] + number[0])
@@ -157,7 +157,7 @@ for i in a:
         a.remove(i)
 print(min(a), max(a))
 
-#task O
+# task O
 a = input().strip()
 b = input().strip()
 
@@ -191,12 +191,11 @@ if len(str(middle_sum)) < 2:
 else:
     middle_sum = str(middle_sum)[1:]
 
-
 result = str(max_digit) + str(middle_sum) + str(min_digit)
 
 print(result)
 
-#task P
+# task P
 a = int(input())
 b = int(input())
 c = int(input())
@@ -235,7 +234,7 @@ print("  " + second.ljust(18))
 print(third.rjust(22))
 print("   II      I      III   ")
 
-#task Q
+# task Q
 import math
 
 a = float(input())
@@ -265,7 +264,7 @@ else:
         x1, x2 = sorted([x1, x2])
         print(f"{x1:.2f} {x2:.2f}")
 
-#task R
+# task R
 a = int(input())
 b = int(input())
 c = int(input())
@@ -273,17 +272,17 @@ c = int(input())
 sides = sorted([a, b, c])
 a, b, c = sides[0], sides[1], sides[2]
 
-if a**2 + b**2 == c**2:
+if a ** 2 + b ** 2 == c ** 2:
     print("100%")
-elif a**2 + b**2 < c**2:
+elif a ** 2 + b ** 2 < c ** 2:
     print("велика")
 else:
     print("крайне мала")
 
-#task Sx = float(input())
+# task Sx = float(input())
 y = float(input())
 
-distance = (x**2 + y**2)**0.5
+distance = (x ** 2 + y ** 2) ** 0.5
 
 if distance <= 5:
     print("Опасность! Покиньте зону как можно скорее!")
@@ -292,7 +291,7 @@ elif distance <= 10:
 else:
     print("Вы вышли в море и рискуете быть съеденным акулой!")
 
-#task T
+# task T
 lines = []
 for _ in range(3):
     line = input().strip()
@@ -308,4 +307,3 @@ if filtered_lines:
     print(f"{best_line} {len(best_line)}")
 else:
     print("Зайка не найдена")
-

@@ -1,9 +1,9 @@
-#task A
+# task A
 while input() != "Три!":
     print("Режим ожидания...")
 print("Ёлочка, гори!")
 
-#task B
+# task B
 count = 0
 while True:
     line = input().strip()
@@ -13,7 +13,7 @@ while True:
         count += 1
 print(count)
 
-#task C
+# task C
 start = int(input())
 end = int(input())
 current = start
@@ -21,7 +21,7 @@ while current <= end:
     print(current, end=" ")
     current += 1
 
-#task D
+# task D
 start = int(input())
 end = int(input())
 step = 0
@@ -34,7 +34,7 @@ while current != end + step:
     print(current, end=" ")
     current += step
 
-#task E
+# task E
 total = 0
 while True:
     price = float(input())
@@ -45,7 +45,7 @@ while True:
     total += price
 print(round(total, 1))
 
-#task F
+# task F
 a = int(input())
 b = int(input())
 
@@ -54,7 +54,7 @@ while b != 0:
 
 print(a)
 
-#task G
+# task G
 a = int(input())
 b = int(input())
 
@@ -69,14 +69,14 @@ lcm = (original_a * original_b) // gcd
 
 print(lcm)
 
-#task H
+# task H
 info = input()
 n = int(input())
 
 for _ in range(n):
     print(info)
 
-#task I
+# task I
 n = int(input())
 
 factorial = 1
@@ -85,7 +85,7 @@ for i in range(1, n + 1):
 
 print(factorial)
 
-#task J
+# task J
 x, y = 0, 0
 
 while True:
@@ -105,7 +105,7 @@ while True:
 print(y)
 print(x)
 
-#task K
+# task K
 n = input()
 sum_digits = 0
 
@@ -114,7 +114,7 @@ for digit in n:
 
 print(sum_digits)
 
-#task L
+# task L
 n = input()
 max_digit = 0
 
@@ -123,7 +123,7 @@ for digit in n:
 
 print(max_digit)
 
-#task M
+# task M
 N = int(input())
 players = []
 
@@ -133,7 +133,7 @@ for _ in range(N):
 first_player = min(players)
 print(first_player)
 
-#task N
+# task N
 n = int(input())
 
 if n <= 1:
@@ -150,7 +150,7 @@ else:
     else:
         print("NO")
 
-#task O
+# task O
 n = int(input())
 count = 0
 
@@ -161,7 +161,7 @@ for _ in range(n):
 
 print(count)
 
-#task P
+# task P
 number = input()
 
 if number == number[::-1]:
@@ -169,7 +169,7 @@ if number == number[::-1]:
 else:
     print("NO")
 
-#task Q
+# task Q
 number = input()
 result = ''
 
@@ -179,7 +179,7 @@ for digit in number:
 
 print(result)
 
-#task R
+# task R
 n = int(input())
 factors = []
 divisor = 2
@@ -199,7 +199,7 @@ for i in range(len(factors)):
     else:
         print(factors[i], end=" * ")
 
-#task S
+# task S
 low = 1
 high = 1000
 attempts = 0
@@ -218,7 +218,7 @@ while attempts < 10:
 
     attempts += 1
 
-#task T
+# task T
 N = int(input())
 blocks = []
 
@@ -242,4 +242,3 @@ for i in range(N):
     previous_hash = h
 else:
     print(-1)
-
