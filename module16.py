@@ -41,18 +41,19 @@ print(successful_combinations, total_combinations)
 
 # task D
 import math
+import sys
 
+input_data = sys.stdin.read().strip()
+numbers = list(map(float, input_data.split()))
 
-x, y = map(float, input().split())
+product = 1
+n = len(numbers)
+for number in numbers:
+    product *= number
 
-rho, phi = map(float, input().split())
+geometric_mean = product ** (1 / n)
 
-x_p = rho * math.cos(phi)
-y_p = rho * math.sin(phi)
-
-distance = math.sqrt((x - x_p)**2 + (y - y_p)**2)
-
-print(distance)
+print(geometric_mean)
 
 # task E
 import math
